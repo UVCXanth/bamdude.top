@@ -68,7 +68,7 @@
         },
         {
           "title": "Camera streaming",
-          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. Checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
+          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. A camera that drops or keeps repeating one frame is redialled by itself for as long as somebody watches, and snapshots, notification photos and Telegram take their frame from the live view instead of opening a second connection. Checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
         },
         {
           "title": "A plate-detection area that follows the bed",
@@ -76,7 +76,7 @@
         },
         {
           "title": "Camera Wall",
-          "body": "Flip the Printers page to Cam wall or open /camwall on a wall-mounted screen. Tiles start with snapshots; click one to make it the live camera, and click again to return to snapshots. Off-screen tiles pause, while visible snapshots keep their last good image and show when it arrived. Live viewing respects the browser connection limit: two streams on HTTP/1 or unknown transport, up to 16 on confirmed HTTP/2 or HTTP/3. Status overlays and HMS badges stay visible. A signed-out TV uses a Cam Wall token that reveals neither printer addresses nor print names."
+          "body": "Flip the Printers page to Cam wall or open /camwall on a wall-mounted screen. Tiles start with snapshots; click one to make it the live camera, and click again to return to snapshots. Off-screen tiles pause, while visible snapshots keep their last good image and show when it arrived. One camera is live at a time, and it shares the tab's stream budget with the floating camera: two streams on HTTP/1 or an unknown transport, more on confirmed HTTP/2 or HTTP/3. Tiles come in S, M, L and XL, and a live tile that loses its stream reconnects, then offers Retry. Status overlays and HMS badges stay visible. A signed-out TV uses a Cam Wall token: snapshots only, with neither printer addresses nor print names."
         },
         {
           "title": "In-app camera diagnostics",
@@ -88,7 +88,7 @@
         },
         {
           "title": "OBS overlay",
-          "body": "Drop a single URL into OBS for a clean live-stream overlay with progress, ETA, and AMS. OBS has no login session, so it authenticates with a Streaming Overlay token — one printer, nothing else."
+          "body": "Drop a single URL into OBS for a live-stream overlay with the camera, progress, layers, ETA and temperatures. The builder in Settings picks the fields, your own progress colours, a second design with a see-through ground and fixed landscape or portrait outputs, and can create the Streaming Overlay token OBS needs. A printer that goes offline shows as offline instead of frozen figures."
         },
         {
           "title": "Calibration UI",
