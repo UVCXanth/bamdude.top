@@ -68,7 +68,7 @@
         },
         {
           "title": "Camera streaming",
-          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. In development after 0.7.3: checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
+          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. Checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
         },
         {
           "title": "A plate-detection area that follows the bed",
@@ -211,8 +211,8 @@
           "body": "The Print dialog's number used to mean «on each printer you picked» — three printers at 4 made twelve prints while the field said four. Now a line under the field states the outcome, and a toggle offers Per printer or Total: a total is dealt round-robin across the picked printers in the order they are listed, 13 on three becoming 5 / 4 / 4, with the line naming who gets what. Your choice is remembered in the browser; the auto-queue's field was always a total."
         },
         {
-          "title": "Print-state recovery (development)",
-          "body": "In development after 0.7.3: a print already paused when BamDude restarts rejoins its existing run. Info explains conflicting queue claims and offers group cancellation, with separate confirmation for a plate swap already performed by hand. Repair preserves print history, sends no printer commands and leaves the queue paused. Inspect the plate before resuming; cancelled stale claims cannot be retried, cloned or repeated from a plate-clear prompt."
+          "title": "Print-state recovery",
+          "body": "A print already paused when BamDude restarts rejoins its existing run. Info explains conflicting queue claims and offers group cancellation, with separate confirmation for a plate swap already performed by hand. Repair preserves print history, sends no printer commands and leaves the queue paused. Inspect the plate before resuming; cancelled stale claims cannot be retried, cloned or repeated from a plate-clear prompt."
         },
         {
           "title": "Auto-pause on failure",
@@ -843,12 +843,12 @@
       "description": "Always-on auth with MFA, OIDC, LDAP, plus REST/MQTT/Prometheus for everything else.",
       "items": [
         {
-          "title": "Access and diagnostic safeguards (development)",
-          "body": "In development after 0.7.3: sensitive authentication and backup controls require an administrator, temporary authentication outages preserve browser and kiosk sign-ins, and shared log views and exports redact credential fields before searching or truncating. Saved integration credentials and camera source URLs remain private even to administrators. Keeping a credential requires the same destination; explicit connection saves and draft tests avoid accidental changes."
+          "title": "Access and diagnostic safeguards",
+          "body": "Sensitive authentication and backup controls require an administrator, temporary authentication outages preserve browser and kiosk sign-ins, and shared log views and exports redact credential fields before searching or truncating. Saved integration credentials and camera source URLs remain private even to administrators. Keeping a credential requires the same destination; explicit connection saves and draft tests avoid accidental changes."
         },
         {
-          "title": "Credential upgrade (development)",
-          "body": "In development after 0.7.3: upgrading requires signing in again and replacing every legacy API key and camera/monitor token, including ownerless keys. Settings shows affected counts. Update integrations and saved camera-wall, overlay and TV links using the authentication upgrade checklist in the documentation. Newly issued credentials survive ordinary restarts."
+          "title": "Credential upgrade",
+          "body": "Upgrading requires signing in again and replacing every legacy API key and camera/monitor token, including ownerless keys. Settings shows affected counts. Update integrations and saved camera-wall, overlay and TV links using the authentication upgrade checklist in the documentation. Newly issued credentials survive ordinary restarts."
         },
         {
           "title": "Granular permissions",
@@ -864,7 +864,7 @@
         },
         {
           "title": "OIDC SSO incl. Azure Entra ID",
-          "body": "PKCE + state + nonce + JWKS, SSRF guards on issuer URL, configurable email_claim (preferred_username / upn) for Microsoft 365 / Entra ID. In development after 0.7.3: Remember Me works with SSO-only login and optional 2FA, within the administrator's session ceiling; unattended autologin stays unchecked."
+          "body": "PKCE + state + nonce + JWKS, SSRF guards on issuer URL, configurable email_claim (preferred_username / upn) for Microsoft 365 / Entra ID. Remember Me works with SSO-only login and optional 2FA, within the administrator's session ceiling; unattended autologin stays unchecked."
         },
         {
           "title": "SSO declared in environment variables",
@@ -872,7 +872,7 @@
         },
         {
           "title": "LDAP / Active Directory",
-          "body": "Group-mapped LDAP login for shops with existing identity. In development after 0.7.3: schema-aware group lookup, safe connection-test errors and no plaintext fallback after TLS failure. Incomplete group lookup blocks sign-in; manual groups outside LDAP management stay intact."
+          "body": "Group-mapped LDAP login for shops with existing identity. Schema-aware group lookup, safe connection-test errors and no plaintext fallback after TLS failure. Incomplete group lookup blocks sign-in; manual groups outside LDAP management stay intact."
         },
         {
           "title": "Sliding-session refresh",
@@ -884,15 +884,15 @@
         },
         {
           "title": "REST + WebSocket API",
-          "body": "Full REST API with API keys, plus WebSocket for live status integrations. In development after 0.7.3: open views recheck current access; revocation stops the affected session or credential's live delivery within five seconds while other viewers keep running. Explicit API keys cannot fall back to a browser session or URL token."
+          "body": "Full REST API with API keys, plus WebSocket for live status integrations. Open views recheck current access; revocation stops the affected session or credential's live delivery within five seconds while other viewers keep running. Explicit API keys cannot fall back to a browser session or URL token."
         },
         {
           "title": "OrcaBamDude server API — in development",
-          "body": "Upload sliced files and submit to a printer queue or Auto-Queue with API keys; named operations prevent duplicate queue entries after a lost response. Printer camera access respects the key's scope and stops within five seconds after revocation. In development after 0.7.3; client packaging and platform support are separate."
+          "body": "Upload sliced files and submit to a printer queue or Auto-Queue with API keys; named operations prevent duplicate queue entries after a lost response. Printer camera access respects the key's scope and stops within five seconds after revocation. Client packaging and platform support are separate."
         },
         {
           "title": "BamDude AI — development preview",
-          "body": "Connect your own assistant through opt-in, read-only MCP. Inspect printer and queue state, retained print and energy evidence, and recovery explanations; actions stay in the normal UI. Client packages and a shared skill simplify setup. In development after v0.7.2, not included in the published v0.7.2; see AI assistants in the documentation for client support and data-sharing limits."
+          "body": "Connect your own assistant through opt-in, read-only MCP. Inspect printer and queue state, retained print and energy evidence, and recovery explanations; actions stay in the normal UI. Client packages and a shared skill simplify setup. See AI assistants in the documentation for client support and data-sharing limits."
         },
         {
           "title": "Prometheus metrics",
@@ -912,7 +912,7 @@
         },
         {
           "title": "Git backup",
-          "body": "Schedule config backups to GitHub, GitLab, Gitea or Forgejo and restore selected categories from a commit. In development after 0.7.3: exports require current administrator approval and a private repository. Paused schedules show the reason and last successful copy, with one in-app administrator notice per blocked period."
+          "body": "Schedule config backups to GitHub, GitLab, Gitea or Forgejo and restore selected categories from a commit. Exports require current administrator approval and a private repository. Paused schedules show the reason and last successful copy, with one in-app administrator notice per blocked period."
         },
         {
           "title": "OrcaSlicer preset import",
