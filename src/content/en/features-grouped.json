@@ -68,7 +68,7 @@
         },
         {
           "title": "Camera streaming",
-          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. A camera that drops or keeps repeating one frame is redialled by itself for as long as somebody watches, and snapshots, notification photos and Telegram take their frame from the live view instead of opening a second connection. Checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
+          "body": "Live MJPEG and snapshots, plus optional RTSP/USB external cameras. A camera that drops or keeps repeating one frame is redialled by itself for as long as somebody watches, and snapshots, notification photos and Telegram take their frame from the live view instead of opening a second connection. The floating camera window stays open on every page of the app, and opening another camera replaces it. Checked HTTP redirects keep credentials on the original origin, and slow snapshot transfers share a budget of received image bytes. Many large snapshots can exhaust that budget."
         },
         {
           "title": "A plate-detection area that follows the bed",
@@ -88,7 +88,7 @@
         },
         {
           "title": "OBS overlay",
-          "body": "Drop a single URL into OBS for a live-stream overlay with the camera, progress, layers, ETA and temperatures. The builder in Settings picks the fields, your own progress colours, a second design with a see-through ground and fixed landscape or portrait outputs, and can create the Streaming Overlay token OBS needs. A printer that goes offline shows as offline instead of frozen figures."
+          "body": "Drop a single URL into OBS for a live-stream overlay with the camera, progress, layers, ETA and temperatures. The builder in Settings picks the fields, your own progress colours, a second design with a see-through ground, fixed landscape or portrait outputs and your own logo, and can create the Streaming Overlay token OBS needs. A printer that goes offline shows as offline instead of frozen figures."
         },
         {
           "title": "Calibration UI",
