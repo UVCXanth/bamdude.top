@@ -391,6 +391,10 @@
           "body": "Title, author, license, sliced-for printer, full compatibility list, materials, AMS requirement, and a deep-link back to the original — all written to a child meta table on import and used to drive the History grid."
         },
         {
+          "title": "Manyfold library as a model source",
+          "body": "Connect a self-hosted Manyfold library and browse it inside BamDude: search, previews, creator and licence. Import one file, a selection, a whole model or several models into the File Manager — 3MF, STL, STEP and OBJ, with files you already hold skipped. Works over plain http on your own network, object storage beside Manyfold included."
+        },
+        {
           "title": "Server-side slicing",
           "body": "Send STL/3MF to a containerised OrcaSlicer or BambuStudio sidecar and get a printable .gcode.3mf back without leaving the app."
         },
