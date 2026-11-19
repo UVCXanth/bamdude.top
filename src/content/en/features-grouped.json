@@ -356,7 +356,7 @@
         },
         {
           "title": "Assemble a project from models",
-          "body": "Select STL, OBJ or STEP models and BamDude lays them out densely — small parts go into the holes and hollows of larger ones, which a slicer's auto-arrange does not do. Give copies per part or fill a plate, add several printers at once, and each gets its own project 3MF with your printer, process and filament presets inside, ready to open and slice. Re-layout reopens an assembled project with the same values. No slicer sidecar is needed."
+          "body": "Select STL, OBJ or STEP models and BamDude lays them out densely — small parts go into the holes and hollows of larger ones, which a slicer's auto-arrange does not do. Give copies per part or fill a plate, add several printers at once, and each gets its own project 3MF with your printer, process and filament presets inside, ready to open and slice. Re-layout reopens an assembled project with the same values. No slicer sidecar is needed. After success or failure, Edit and try again returns to the same settings without starting another job or removing the previous result."
         },
         {
           "title": "External folder mounting",
@@ -405,10 +405,6 @@
         {
           "title": "Keep the designer's print settings",
           "body": "MakerWorld models often deviate from the stock profile on purpose — five walls, 100% infill, a 0.1 mm first layer — and a re-slice used to throw all of it away. The Slice dialog now lists exactly which settings the author changed, with a checkbox each: design intent ticked, machine-tuned values (speeds, accelerations, temperatures) listed but not. Bambu Studio writes that list into the 3MF itself, so nothing is guessed."
-        },
-        {
-          "title": "Your farm, your profiles",
-          "body": "Slice and assemble with your farm models and your own process/filament presets first. Visible filters restore the full catalogue, searches narrow each list, and completed assembly can return to its settings for another try."
         },
         {
           "title": "Slicer Preset Bundles (.bbscfg)",
