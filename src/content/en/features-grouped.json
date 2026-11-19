@@ -407,6 +407,10 @@
           "body": "MakerWorld models often deviate from the stock profile on purpose — five walls, 100% infill, a 0.1 mm first layer — and a re-slice used to throw all of it away. The Slice dialog now lists exactly which settings the author changed, with a checkbox each: design intent ticked, machine-tuned values (speeds, accelerations, temperatures) listed but not. Bambu Studio writes that list into the 3MF itself, so nothing is guessed."
         },
         {
+          "title": "Your farm, your profiles",
+          "body": "Slice and assemble with your farm models and your own process/filament presets first. Visible filters restore the full catalogue, searches narrow each list, and completed assembly can return to its settings for another try."
+        },
+        {
           "title": "Slicer Preset Bundles (.bbscfg)",
           "body": "Import a BambuStudio Printer Preset Bundle once and reference its triplets (printer + process + filament) by name on every slice — bypasses the cloud / local / standard tier resolution entirely. Idempotent re-uploads keyed on bundle hash; per-bundle Settings panel for delete."
         },
