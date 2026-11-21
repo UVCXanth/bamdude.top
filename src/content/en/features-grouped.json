@@ -159,6 +159,10 @@
       "description": "Per-printer queues with parallel dispatch, staggered start, and built-in SWAP-mode support.",
       "items": [
         {
+          "title": "Auto Queue recovers a refused upload",
+          "body": "If a printer refuses an upload before the start command is sent, an unchanged Auto Queue job with portable settings can return to the pool. Its file, options and place in line are preserved. The printer’s queue stays stopped until Resume."
+        },
+        {
           "title": "Drop a batch, not a file",
           "body": "As many files as you like onto a printer, its queue or the auto-queue. Anything that cannot print says why, by name. Unverified or incompatible assignments disable normal submission; queuing to wait requires explicit confirmation. A missing Auto-Queue target model has its own save-for-the-future action. Waiting work can hold up later jobs on a selected printer."
         },
