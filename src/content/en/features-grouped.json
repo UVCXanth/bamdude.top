@@ -200,7 +200,7 @@
         },
         {
           "title": "Route to compatible printer models",
-          "body": "BamDude checks Bambu Studio's model compatibility data before assigning a sliced file to another printer. A manual compatible choice shows a warning; Auto-Queue can optionally use a ready compatible printer when no exact-model printer is ready. Nozzle and filament checks still apply."
+          "body": "BamDude checks Bambu Studio's model compatibility data before assigning a sliced file to another printer. A manual compatible choice shows a warning; Auto-Queue can optionally use a ready compatible printer when no exact-model printer is ready. Nozzle and filament checks still apply. When eligible printers are otherwise tied, Auto-Queue can favour the lower known filament level."
         },
         {
           "title": "Rebalancing across printer models",
