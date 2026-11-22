@@ -248,7 +248,7 @@
         },
         {
           "title": "Slice settings",
-          "body": "Save a slice setup once — printer + process + per-slot filament presets + bed type — then load all four back into the Slice dialog with a single pick instead of choosing them again. A preset that has since been deleted is never applied silently: the affected slot keeps its automatic pick and is named in a warning, so you never slice with something you did not choose. Printing a batch is the auto-queue's job, not the pipeline's."
+          "body": "Save a slice setup once — printer + process + per-slot filament presets + bed type — then load it back into the Slice dialog with a single pick instead of choosing them again — or into filament calibration and Assemble project, which take the fields they have. A preset that has since been deleted is never applied silently: the affected field keeps its value and is named in a warning, so you never slice with something you did not choose. Printing a batch is the auto-queue's job, not the pipeline's."
         },
         {
           "title": "Preheat & heat-soak",
@@ -356,7 +356,7 @@
         },
         {
           "title": "Assemble a project from models",
-          "body": "Select STL, OBJ or STEP models and BamDude lays them out densely — small parts go into the holes and hollows of larger ones, which a slicer's auto-arrange does not do. Give copies per part or fill a plate, add several printers at once, and each gets its own project 3MF with your printer, process and filament presets inside, ready to open and slice. Re-layout reopens an assembled project with the same values. No slicer sidecar is needed. After success or failure, Edit and try again returns to the same settings without starting another job or removing the previous result."
+          "body": "Select STL, OBJ or STEP models and BamDude lays them out densely — small parts go into the holes and hollows of larger ones, which a slicer's auto-arrange does not do. Give copies per part or fill a plate, add several printers at once, and each gets its own project 3MF with your printer, process and filament presets inside, ready to open and slice. The rows pick presets from the same lists, source segment and farm filters as the Slice dialog, and each row can take a saved set. Re-layout reopens an assembled project with the same values. No slicer sidecar is needed. After success or failure, Edit and try again returns to the same settings without starting another job or removing the previous result."
         },
         {
           "title": "External folder mounting",
@@ -724,7 +724,7 @@
         },
         {
           "title": "Sliced against your own presets",
-          "body": "Not a canned, pre-sliced 3MF. For every mode the wizard slices the calibration scaffold against your active printer / process / filament presets through a connected OrcaSlicer or Bambu Studio sidecar — exactly as the BS desktop wizard does — applying per-mode preset overrides (wall loops, line width, spiral mode, initial-layer speed) first. The sliced 3MF is FTP'd to the printer and run as a real print through the normal dispatch pipeline, so plate-change macros and chamber-light MQTT actions fire for calibration prints too."
+          "body": "Not a canned, pre-sliced 3MF. For every mode the wizard slices the calibration scaffold against your active printer / process / filament presets through a connected OrcaSlicer or Bambu Studio sidecar — exactly as the BS desktop wizard does — applying per-mode preset overrides (wall loops, line width, spiral mode, initial-layer speed) first. The printer profile has to be proven for this printer and nozzle, and the filament profile is picked by the filament family loaded in the slot. The sliced 3MF is FTP'd to the printer and run as a real print through the normal dispatch pipeline, so plate-change macros and chamber-light MQTT actions fire for calibration prints too."
         },
         {
           "title": "Pressure Advance, end to end",
